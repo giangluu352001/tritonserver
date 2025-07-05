@@ -44,7 +44,7 @@ jobs:
           fi
       -
         name: Build image
-        uses: giang352001/inside-container-action@main
+        uses: hieupth/inside-container-action@main
         with: 
           shell: bash
           username: ${{vars.DOCKERHUB_USERNAME}}
