@@ -17,7 +17,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        version: ['25.06']
+        version: ['25.05']
         variant: ['cpu']
     steps:
       - 
@@ -49,7 +49,7 @@ jobs:
           shell: bash
           username: ${{vars.DOCKERHUB_USERNAME}}
           password: ${{secrets.DOCKERHUB_TOKEN}}
-          image: nvcr.io/nvidia/tritonserver:${{matrix.version}}-py3-min
+          image: giang352001/tritonserverbuild:${{matrix.version}}-builder
           options: |
             -v ./buildscripts:/buildscripts
             -e NV_VERSION=${{matrix.version}}
