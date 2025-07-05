@@ -49,7 +49,7 @@ jobs:
           shell: bash
           username: ${{vars.DOCKERHUB_USERNAME}}
           password: ${{secrets.DOCKERHUB_TOKEN}}
-          image: giang352001/tritonserverbuild:${{matrix.version}}-builder
+          image: nvcr.io/nvidia/tritonserver:${{matrix.version}}-py3-min
           options: |
             -v ./buildscripts:/buildscripts
             -e NV_VERSION=${{matrix.version}}
