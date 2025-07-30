@@ -17,7 +17,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        version: ['25.05']
+        version: ['25.07']
         variant: ['cpu']
     steps:
       - 
