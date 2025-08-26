@@ -1,4 +1,4 @@
-ARG NV_VERSION=25.07
+ARG NV_VERSION=25.08
 
 FROM nvcr.io/nvidia/tensorrt:${NV_VERSION}-py3 as builder
 
